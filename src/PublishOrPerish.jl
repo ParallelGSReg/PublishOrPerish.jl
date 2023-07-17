@@ -3,16 +3,18 @@ module PublishOrPerish
 	sources = ["crossref", "gsauthor", "gscholar", "gsciting", "gsprofile", 
 		   "masv2", "openalex", "pubmed", "scopus", "semscholar", "wos"]
 
-	methods = ["author", "affiliation", "citedid", "field", "issn", "journal", "title", "keywords", "years"]
+	methods = ["author", "affiliation", "citedid", "field", "issn", "journal", "title", "keywords", "years", "raw"]
 
 	function search(
-			query::AbstractString; 
-			max::Int=100, 
-			source::String="pubmed", 
-			method::String="keywords", 
-			outfile::String="salida.csv"
+			query::Union{String, Vector{String}}; 
+			max::Int = 100, 
+			source::String = "pubmed", 
+			method::String = "keywords", 
+			outfile::String = "salida.csv",
+			username::String = "default",
+			password::String = "default"
 		)::Bool
-	    max = 100
+	    
 	    if !(source in sources) 
 		    # FIXME throw exception
 		    print("Invalid source. Given: $source, available sources $sources")
