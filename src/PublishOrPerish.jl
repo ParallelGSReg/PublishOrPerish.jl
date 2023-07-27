@@ -10,7 +10,7 @@ module PublishOrPerish
 			max::Int = 100, 
 			source::String = "pubmed", 
 			method::String = "keywords", 
-			outfile::String = "salida.csv",
+			outfile::String = "output.csv",
 			username::String = "default",
 			password::String = "default"
 		)::Bool
