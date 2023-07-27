@@ -1,4 +1,10 @@
-# # ResearchAccPublishOrPerishelerator.jl Documentation
+# Usage
+
+## Index
+
+```@contents
+Pages = ["usage.md"]
+```
 
 ## Advanced usage
 ```julia
@@ -15,7 +21,7 @@ search(
 )
 ```
 
-## Detailed documentation: 
+## search() function
 
 ```julia
 search(

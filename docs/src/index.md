@@ -1,7 +1,5 @@
 # PublishOrPerish.jl
 
-[![][documentation-main-img]][documentation-main-url] [![][build-main-img]][build-main-url]
-
 PublishOrPerish.jl is a Julia package that serves as a wrapper for the powerful Publish or Perish software. The package aims to streamline the process of accessing and utilizing Publish or Perish functionalities directly from Julia.
 
 ## Features
@@ -9,26 +7,6 @@ PublishOrPerish.jl is a Julia package that serves as a wrapper for the powerful 
 - Seamless Integration: Easily integrate with Publish or Perish, a leading citation analysis tool for academic and scientific research.
 - Simplified API: Abstracts away complexities, providing a straightforward API to access and leverage Publish or Perish's extensive capabilities.
 - Automated Retrieval: Retrieve publication metrics, citation data, and more with ease, all directly from your Julia environment.
-
-## Installation
-
-You can install the package by running the following command in the Julia REPL:
-
-```julia
-using Pkg
-Pkg.add("PublishOrPerish")
-```
-
-## Usage
-
-```julia
-using PublishOrPerish
-
-data = search(["machine learning", "ai", "julia"])
-```
-## Documentation
-
-For more detailed information about this package, its functionalities, and usage instructions, please refer to our [documentation page](https://parallelgsreg.github.io/PublishOrPerish.jl).
 
 ## Contributing
 
@@ -41,9 +19,3 @@ For an overview of pending tasks, improvements, and future plans for the ModelSe
 ## License
 
 This package is licensed under the [MIT License](LICENSE).
-
-[build-main-img]: https://github.com/ParallelGSReg/PublishOrPerish.jl/actions/workflows/build.yaml/badge.svg?branch=main
-[build-main-url]: https://github.com/ParallelGSReg/PublishOrPerish.jl/pkgs/container/publishorperish.jl
-
-[documentation-main-img]: https://github.com/ParallelGSReg/PublishOrPerish.jl/actions/workflows/docs.yaml/badge.svg
-[documentation-main-url]: https://parallelgsreg.github.io/PublishOrPerish.jl
